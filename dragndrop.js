@@ -3,7 +3,7 @@
  * author: Sergey Sedyshev
  */
 
-var dragndrop = function( elem, limitByParent ) {
+var dragndrop = function( elem, strictDrag, limitByParent ) {
 	elem.addEventListener("mousedown", onMouseDown);
 	elem.addEventListener("change", onChange);
 	
@@ -38,6 +38,10 @@ var dragndrop = function( elem, limitByParent ) {
 	}
 	
 	function onMouseDown( e ) {
+		if (strictDrag && e.target !== elem) {
+			return;
+		}
+		
 		e.stopPropagation();
 		
 		refresh();
@@ -80,7 +84,7 @@ dragndrop.init = function() {
 	var i = -1;
 	var l = arr.length;
 	while (++i < l) {
-		dragndrop(arr[i]);
+		dragndrop(arr[i], true);
 	}
 }
 
