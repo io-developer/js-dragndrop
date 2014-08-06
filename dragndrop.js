@@ -1,6 +1,5 @@
 /**
- * dragndrop.js
- * author: Sergey Sedyshev
+ * repo: https://github.com/io-developer/dragndrop.js
  */
 
 var dragndrop = function( elem, strictDrag, limitByParent ) {
