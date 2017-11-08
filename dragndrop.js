@@ -1,7 +1,3 @@
-/**
- * repo: https://github.com/io-developer/dragndrop.js
- */
-
 var dragndrop = function( elem, strictDrag, limitByParent ) {
 	elem.addEventListener("mousedown", onMouseDown);
 	elem.addEventListener("change", onChange);

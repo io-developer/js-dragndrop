@@ -1,6 +1,7 @@
 # dragndrop
 
-Pure JS drag-n-drop for any binded dom element
+Pure JS drag-n-drop for any binded DOM element.
+You can mixin behavior with lib __js-resizable__
 
 ## Example
 
@@ -12,7 +13,6 @@ Pure JS drag-n-drop for any binded dom element
     <script type="text/javascript">
         dragndrop.initOnDocumentReady();
     </script>
-    
     <style>
         .js-dragndrop {
             -moz-user-select: none;
@@ -22,7 +22,6 @@ Pure JS drag-n-drop for any binded dom element
             -ms-user-select: none;
             user-select': none;
         }
-
         .outer {
             display: block;
             position: relative;
@@ -31,7 +30,6 @@ Pure JS drag-n-drop for any binded dom element
             margin: 20px;
             background-color: #EEE;
         }
-        
         .inner {
             display: block;
             position: absolute;
@@ -39,7 +37,6 @@ Pure JS drag-n-drop for any binded dom element
             min-height: 50px;
             padding: 20px;
         }
-        
         .inner--1 {
             left: 100px;
             top: 100px;
@@ -47,13 +44,11 @@ Pure JS drag-n-drop for any binded dom element
             height: 200px;
             background-color: #b1b1ff;
         }
-        
         .inner--2 {
             left: 100px;
             top: 50px;
             background-color: #92f192;
         }
-        
         .inner--3 {
             left: 400px;
             top: 200px;
