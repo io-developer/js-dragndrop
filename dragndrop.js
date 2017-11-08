@@ -74,8 +74,8 @@ var dragndrop = function( elem, strictDrag, limitByParent ) {
 }
 
 
-dragndrop.dragndropClass = "dragndrop";
-dragndrop.dragndropLimiterClass = "dragndrop-limiter";
+dragndrop.dragndropClass = "js-dragndrop";
+dragndrop.dragndropLimiterClass = "js-dragndrop-limiter";
 
 
 dragndrop.init = function() {
