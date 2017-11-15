@@ -20,7 +20,7 @@ You can mixin behavior with lib __js-resizable__
             -khtml-user-select: none;
             -webkit-user-select: none;
             -ms-user-select: none;
-            user-select': none;
+            user-select: none;
         }
         .outer {
             display: block;
